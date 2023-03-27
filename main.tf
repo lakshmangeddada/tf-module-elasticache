@@ -23,3 +23,6 @@ resource "aws_elasticache_subnet_group" "main" {
   )
 }
 
+output "redis" {
+  value = aws_elasticache_cluster.elasticache
+}
